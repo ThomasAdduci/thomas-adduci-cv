@@ -1,0 +1,69 @@
+body {
+  background-color: #161719;
+  /* font-family: 'Roboto', sans-serif; */
+}
+
+header {
+  background-color: #1C1D1E;
+}
+
+a {
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(126, 125, 125);
+  font-family: 'Poppins', sans-serif;
+}
+
+a:hover {
+  color: #b8b7b7;
+}
+
+.content-position {
+  padding: 0 23% !important;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem 0;
+}
+
+.my-photo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.my-information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.information-text {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.single-line {
+  display: flex;
+  color: #b3b2b2;
+  -webkit-box-align: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  -webkit-box-pack: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 13px;
+  pointer-events: none;
+  margin: 0 !important;
+}
+
+.sections-container {
+  display: flex;
+  gap: 25px;
+}
