@@ -1,6 +1,5 @@
 body {
   background-color: #161719;
-  /* font-family: 'Roboto', sans-serif; */
 }
 
 header {
@@ -10,7 +9,7 @@ header {
 a {
   font-size: 14px;
   text-decoration: none;
-  color: rgb(126, 125, 125);
+  color: #9f9d9d;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -18,8 +17,28 @@ a:hover {
   color: #b8b7b7;
 }
 
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0 2rem;
+}
+
 .content-position {
   padding: 0 23% !important;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#navbar.scrolling {
+  background-color: #1f20207d;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 11px 27px -4px rgba(0,0,0,0.75);
 }
 
 .nav-container {
@@ -66,4 +85,83 @@ a:hover {
 .sections-container {
   display: flex;
   gap: 25px;
+}
+
+.download-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+  background: none;
+  border: 1px solid #45484b;
+  color: #fff;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.download-button:hover {
+  background: #252628;
+}
+
+.download-icon {
+  font-size: 20px;
+}
+
+.social-access-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px;
+  padding: 10px 12px;
+  width: 100px;
+  cursor: pointer;
+  background: #12589e;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.access-buttons-container {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.arrow-icon {
+  font-size: 12px !important;
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.social-access-button:hover .arrow-icon {
+  transform: translateX(5px);
+}
+
+.title-container {
+  text-align: center;
+  display: grid;
+  gap: 3px;
+  font-family: 'Roboto', sans-serif;
+  h1{
+    margin: 0;
+    font-size: 80px;
+    color: #fff;
+  }
+  h2{
+    margin: 0;
+    font-size: 80px;
+    color: #fff;
+  }
+  h3{
+    margin: 0;
+    font-size: 25px;
+    color: #fff;
+  }
 }
