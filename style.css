@@ -95,7 +95,7 @@ a:hover {
   padding: 10px 12px;
   cursor: pointer;
   background: none;
-  border: 1px solid #45484b;
+  border: 1px solid #373839;
   color: #fff;
   border-radius: 10px;
   font-family: 'Roboto', sans-serif;
@@ -164,4 +164,69 @@ a:hover {
     font-size: 25px;
     color: #fff;
   }
+}
+
+#about {
+  color: white;
+  margin-top: 40px;
+  h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    margin: 15px 0;
+  }
+}
+
+.information-container {
+  p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #9f9d9d;
+  }
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.sections-title {
+  color: #12589e;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0;
+}
+
+/* CONTENEDOR DE INFORMACION SOBRE CARRERAS Y CERTIFICACIONES */
+
+.carreers-cards-container {
+  display: grid;
+  gap: 10px;
+}
+
+.black-card {
+  background-color: #1C1D1E;
+  border: 0.5px solid #373839;
+  padding: 20px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.black-card .title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.black-card .subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #9f9d9d;
+}
+
+.black-card .date {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  color: #9f9d9d;
 }
