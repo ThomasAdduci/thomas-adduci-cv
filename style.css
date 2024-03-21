@@ -230,3 +230,46 @@ a:hover {
   font-size: 13px;
   color: #9f9d9d;
 }
+
+#certifications {
+  color: white;
+  margin: 40px 0;
+  .sections-title{
+    margin-bottom: 20px;
+  }
+}
+
+.black-card-icon {
+  background-color: #1C1D1E;
+  border: 0.5px solid #373839;
+  padding: 20px;
+  border-radius: 10px;
+  height: 15vh;
+  position: relative;
+  padding-right: 30px;
+}
+
+.black-card-icon:hover {
+  background-color: #252628;
+}
+
+.black-card-icon .title {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.black-card-icon .subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #9f9d9d;
+}
+
+.icon {
+  color: #fff;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
