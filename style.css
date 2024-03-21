@@ -169,11 +169,11 @@ a:hover {
 #about {
   color: white;
   margin-top: 40px;
-  h4{
-    font-family: 'Roboto', sans-serif;
-    font-size: 19px;
-    margin: 15px 0;
-  }
+    h4{
+      font-family: 'Roboto', sans-serif;
+      font-size: 19px;
+      margin: 15px 0;
+    }
 }
 
 .information-container {
@@ -192,8 +192,9 @@ a:hover {
 }
 
 .sections-title {
-  color: #12589e;
+  color: #5A8BD4;
   font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
   margin-bottom: 0;
 }
 
@@ -234,9 +235,9 @@ a:hover {
 #certifications {
   color: white;
   margin: 40px 0;
-  .sections-title{
-    margin-bottom: 20px;
-  }
+    .sections-title{
+      margin-bottom: 20px;
+    }
 }
 
 .black-card-icon {
@@ -263,7 +264,7 @@ a:hover {
 .black-card-icon .subtitle {
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
-  margin-bottom: 5px;
+  line-height: normal;
   color: #9f9d9d;
 }
 
@@ -272,4 +273,37 @@ a:hover {
   position: absolute;
   top: 5px;
   right: 5px;
+}
+
+#skills {
+  margin-bottom: 20px;
+  h3{
+    margin-bottom: 20px;
+  }
+}
+
+.column {
+  display: grid;
+  gap: 10px;
+}
+
+.chips-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding-bottom: 40px;
+}
+
+.black-chip {
+  display: flex;
+  justify-content: center;
+  background-color: #1C1D1E;
+  border: 0.5px solid #373839;
+  padding: 20px;
+  border-radius: 10px;
+    .title{
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+    }
 }
