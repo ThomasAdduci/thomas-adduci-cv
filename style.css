@@ -166,6 +166,21 @@ a:hover {
   }
 }
 
+.header-images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-images-container img {
+  transition: transform 0.1s ease;
+}
+
+.header-images-container img:hover {
+  transform: scale(1.1);
+}
+
 #about {
   color: white;
   margin-top: 40px;
