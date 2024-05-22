@@ -13,9 +13,44 @@ a {
   font-family: 'Poppins', sans-serif;
 }
 
+.navbar-effect {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.navbar-effect::before,
+.navbar-effect::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #b8b7b7;
+  transition: width 0.5s ease, left 0.5s ease, right 0.5s ease;
+}
+
+a::before {
+  left: 50%;
+}
+
+a::after {
+  right: 50%;
+}
+
+a:hover::before {
+  width: 50%;
+  left: 0;
+}
+
+a:hover::after {
+  width: 50%;
+  right: 0;
+}
+
 a:hover {
   color: #b8b7b7;
 }
+
 
 .header-container {
   display: flex;
@@ -322,4 +357,46 @@ a:hover {
       font-family: 'Roboto', sans-serif;
       font-size: 16px;
     }
+}
+
+.footer-background {
+  display: grid;
+  align-items: center;
+  height: 18vh;
+  background-color: #1C1D1E;
+    ul {
+      padding: 0;
+    }
+    a {
+      font-size: 16px;
+    }
+}
+
+.footer-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-icon {
+  padding-right: 0.3rem;
+}
+
+@keyframes jump {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+.social-media-icons:hover i {
+  animation: jump 0.4s ease 2;
+}
+
+.social-media-icons {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.footer-links:hover {
+  animation: jump 0.4s ease 2;
 }
