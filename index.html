@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" type="image/png" href="./assets/img/favicon-logo.png">
   <title>Thomas | Software Developer</title>
@@ -23,12 +24,12 @@
         </div>
         <nav>
           <ul class="sections-container">
-            <a href="#home">Inicio</a>
-            <a href="#">Experiencia</a>
-            <a href="#">Proyectos</a>
-            <a href="#about">Sobre mi</a>
-            <a href="#certifications">Certificaciones</a>
-            <a href="#skills">Skills</a>
+            <a class="navbar-effect" href="#home">Inicio</a>
+            <a class="navbar-effect" href="#workExperience">Experiencia</a>
+            <a class="navbar-effect" href="#proyects">Proyectos</a>
+            <a class="navbar-effect" href="#about">Sobre mi</a>
+            <a class="navbar-effect" href="#certifications">Certificaciones</a>
+            <a class="navbar-effect" href="#skills">Skills</a>
           </ul>
         </nav>
       </div>
@@ -73,6 +74,12 @@
       </div>
     </div>
   </header>
+  <!-- <div id="workExperience" class="content-position">
+    <h3 class="sections-title">Experiencia laboral</h3>
+  </div>
+  <div id="proyects" class="content-position">
+    <h3 class="sections-title">Proyectos</h3>
+  </div> -->
   <div id="about" class="content-position">
     <h3 class="sections-title">Sobre mi</h3>
     <div class="about-section">
@@ -147,7 +154,7 @@
           <div class="title">Java</div>
         </div>
         <div class="black-chip">
-          <div class="title">Kotlin</div>
+          <div class="title">Bootstrap</div>
         </div>
       </div>
       <div class="column">
@@ -185,6 +192,23 @@
       </div>
     </div>
   </div>
+  <footer class="footer-background">
+    <div class="content-position">
+        <nav class="footer-display">
+          <ul class="sections-container">
+            <a class="footer-links" href="#"><i class="fas fa-plus footer-icon"></i></i>Más sobre mi</a>
+            <a class="footer-links" href="#"><i class="fas fa-code footer-icon"></i></i>Javascript proyectos</a>
+            <a class="footer-links" href="#"><i class="fas fa-envelope footer-icon"></i></i>Contacto</a>
+          </ul>
+          <div>
+            <a href="#" class="social-media-icons"><i class="fab fa-linkedin-in fa-lg"></i></a>
+            <a href="#" class="social-media-icons"><i class="fab fa-github-alt fa-lg"></i></a>
+            <a href="#" class="social-media-icons"><i class="fab fa-discord fa-lg"></i></a>
+            <a href="#" class="social-media-icons"><i class="fab fa-instagram fa-lg"></i></a>
+          </div>
+        </nav>
+    </div>
+  </footer>
   <script src="./main.js"></script>
 </body>
 </html>
