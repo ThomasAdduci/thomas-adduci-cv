@@ -37,16 +37,24 @@
   </nav>
   <header>
     <div id="home" class="header-container">
-      <a href="./assets/docs/CV-Adduci-Thomas.pdf" download="CV-Adduci-Thomas.pdf">
-        <button class="download-button">
-          <span class="material-symbols-outlined download-icon">file_save</span>
-          Descargar CV
-        </button>
-      </a>
+      <div class="cv-buttons-container">
+        <a href="./assets/docs/CV-Adduci-Thomas-Es.pdf" download="CV-Adduci-Thomas-Es.pdf">
+          <button class="download-button button--mimas">
+            <span class="material-symbols-outlined download-icon">file_save</span>
+            CV ESPAÑOL
+          </button>
+        </a>
+        <a href="./assets/docs/CV-Adduci-Thomas-En.pdf" download="CV-Adduci-Thomas-En.pdf">
+          <button class="download-button button--mimas">
+            <span class="material-symbols-outlined download-icon">file_save</span>
+            CV INGLÉS
+          </button>
+        </a>
+      </div>
       <div class="title-container">
         <h1>Software Developer</h1>
         <h2>Adduci Thomas</h2>
-        <h3>FrontEnd Angular Developer</h3>
+        <h3 id="dynamic-text">FrontEnd Angular Developer</h3>
       </div>
       <div class="access-buttons-container">
         <a href="https://www.linkedin.com/in/thomaseadduci/" target="_blank">
@@ -195,16 +203,19 @@
   <footer class="footer-background">
     <div class="content-position">
         <nav class="footer-display">
-          <ul class="sections-container">
-            <a class="footer-links" href="#"><i class="fas fa-plus footer-icon"></i></i>Más sobre mi</a>
-            <a class="footer-links" href="#"><i class="fas fa-code footer-icon"></i></i>Javascript proyectos</a>
-            <a class="footer-links" href="#"><i class="fas fa-envelope footer-icon"></i></i>Contacto</a>
-          </ul>
           <div>
-            <a href="#" class="social-media-icons"><i class="fab fa-linkedin-in fa-lg"></i></a>
-            <a href="#" class="social-media-icons"><i class="fab fa-github-alt fa-lg"></i></a>
-            <a href="#" class="social-media-icons"><i class="fab fa-discord fa-lg"></i></a>
-            <a href="#" class="social-media-icons"><i class="fab fa-instagram fa-lg"></i></a>
+            <ul class="sections-container">
+              <a class="footer-links" href="#"><i class="fas fa-plus footer-icon"></i></i>Más sobre mi</a>
+              <a class="footer-links" href="#"><i class="fas fa-code footer-icon"></i></i>Javascript proyectos</a>
+              <a class="footer-links" href="mailto:thomaseadduci@gmail.com" target="_blank"><i class="fas fa-envelope footer-icon"></i></i>Contacto</a>
+            </ul>
+            <p>Desarrollado por Thomas Adduci.</p>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/thomaseadduci/" target="_blank" class="social-media-icons"><i class="fab fa-linkedin-in fa-lg"></i></a>
+            <a href="https://github.com/ThomasAdduci" target="_blank" class="social-media-icons"><i class="fab fa-github-alt fa-lg"></i></a>
+            <a href="https://discordapp.com/users/408025331489046529" class="social-media-icons"><i class="fab fa-discord fa-lg"></i></a>
+            <a href="https://www.instagram.com/thomaseadduci/" target="_blank" class="social-media-icons"><i class="fab fa-instagram fa-lg"></i></a>
           </div>
         </nav>
     </div>

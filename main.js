@@ -22,3 +22,49 @@ navLinks.forEach(link => {
     });
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const target = document.getElementById('dynamic-text');
+  const texts = ["FrontEnd Angular Developer", "Angular, Typescript, React, SQL."];
+  let textIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  const calculator = document.createElement('span');
+  calculator.id = 'text-width-calculator';
+  calculator.style.visibility = 'hidden';
+  calculator.style.position = 'absolute';
+  document.body.appendChild(calculator);
+
+  function updateContainerWidth() {
+    const longestText = texts.reduce((a, b) => a.length > b.length ? a : b);
+    calculator.innerText = longestText;
+  }
+
+  updateContainerWidth();
+
+  function type() {
+    const currentText = texts[textIndex];
+    let displayText = currentText.substring(0, charIndex);
+
+    if (isDeleting) {
+      charIndex--;
+    } else {
+      charIndex++;
+    }
+
+    target.innerText = displayText;
+
+    if (!isDeleting && charIndex === currentText.length) {
+      setTimeout(() => isDeleting = true, 1000);
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      textIndex = (textIndex + 1) % texts.length;
+    }
+
+    const speed = isDeleting ? 50 : 100;
+    setTimeout(type, speed);
+  }
+
+  type();
+});
