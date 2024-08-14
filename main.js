@@ -25,7 +25,7 @@ navLinks.forEach(link => {
 
 document.addEventListener('DOMContentLoaded', function() {
   const target = document.getElementById('dynamic-text');
-  const texts = ["FrontEnd Angular Developer", "Angular, Typescript, React, SQL."];
+  const texts = ["FrontEnd Angular Developer", "Angular, Typescript, SQL."];
   let textIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
@@ -67,4 +67,63 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   type();
+});
+
+const experienceData = [
+  {
+    title: "Desarrollador Frontend",
+    subtitle: "Tibó Tecnología | 04/2022 - Actualidad",
+    description: "Led a team of developers in building scalable web applications using React and Node.js.",
+  },
+  {
+    title: "Desarrollador Web",
+    subtitle: "Freelance | 12/2021 - 04/2022",
+    description: "Contributed to the development of a web application based on Angular and NestJS, which functions as a B2B marketplace for fresh food merchants.",
+  }
+];
+
+const container = document.getElementById("experience-cards-container");
+
+experienceData.forEach((experience) => {
+  const card = document.createElement("div");
+  card.classList.add("black-card");
+
+  card.innerHTML = `
+    <div class="experience-card-container">
+      <div>
+        <p class="title">${experience.title}</p>
+        <p class="subtitle">${experience.subtitle}</p>
+        <p class="date">${experience.description}</p>
+      </div>
+      <div class="more-experience-info-container">
+        <p>+ Más info...</p>
+      </div>
+    </div>
+  `;
+
+  container.appendChild(card);
+});
+
+const imageSources = [
+  "./assets/icons/html.png",
+  "./assets/icons/css.png",
+  "./assets/icons/javascript.png",
+  "./assets/icons/angular.png",
+  "./assets/icons/typescript.png",
+  "./assets/icons/mysql.png",
+  "./assets/icons/angular-material.png",
+  "./assets/icons/bootstrap.png",
+  "./assets/icons/tailwind.png",
+  "./assets/icons/git.png",
+  "./assets/icons/java.png",
+  "./assets/icons/github.png",
+];
+
+const skillsContainer = document.querySelector('.skills-container');
+
+imageSources.forEach((src) => {
+  const img = document.createElement("img");
+  img.src = src;
+  img.alt = "Skill Image";
+  skillsContainer.appendChild(img);
 });
