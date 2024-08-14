@@ -59,7 +59,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 4rem 0 2.5rem;
+  padding: 4rem 0 2rem;
 }
 
 .cv-buttons-container {
@@ -273,16 +273,18 @@ a:hover {
 }
 
 .header-images-container img {
-  transition: transform 0.1s ease;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.1s ease;
 }
 
 .header-images-container img:hover {
+  filter: grayscale(0%);
   transform: scale(1.1);
 }
 
 #about {
   color: white;
-  margin-top: 40px;
+  margin-top: 2rem;
     h4{
       font-family: 'Roboto', sans-serif;
       font-size: 19px;
@@ -305,6 +307,43 @@ a:hover {
   gap: 40px;
 }
 
+#experience-cards-container {
+  display: grid;
+  gap: 3%;
+}
+
+.experience-skills-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.experience-card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.skills-container img {
+  width: 50px;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.1s ease;
+}
+
+.skills-container img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
 .sections-title {
   color: #5A8BD4;
   font-family: 'Roboto', sans-serif;
@@ -325,6 +364,10 @@ a:hover {
   padding: 20px;
   border-radius: 10px;
   height: fit-content;
+  position: relative;
+    p {
+      margin: 0;
+    }
 }
 
 .black-card .title {
@@ -346,9 +389,30 @@ a:hover {
   color: #9f9d9d;
 }
 
+.more-experience-info-container {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  color: #5A8BD4;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+.more-experience-info-container:hover {
+  color: white;
+}
+
 #certifications {
   color: white;
   margin: 40px 0;
+    .sections-title{
+      margin-bottom: 20px;
+    }
+}
+
+#workExperience {
+  color: white;
+  margin: 40px 0 0;
     .sections-title{
       margin-bottom: 20px;
     }
@@ -435,8 +499,8 @@ a:hover {
     }
     p {
       margin: 0;
-      padding-top: 0.5rem;
-      color: #9f9d9d;
+      padding-top: 0.1rem;
+      color: #5A8BD4;
       font-family: 'Poppins', sans-serif;
       font-size: 16px;
     }
@@ -471,8 +535,4 @@ a:hover {
 .social-media-icons {
   display: inline-block;
   margin-left: 10px;
-}
-
-.footer-links:hover {
-  animation: jump 0.4s ease 2;
 }
